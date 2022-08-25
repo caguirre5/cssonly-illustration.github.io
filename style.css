@@ -1,0 +1,833 @@
+:root{
+    --gray-1: #EEEEEE;
+    --gray-2: #dddddd;
+    --gray-3: #cccccc;
+    --gray-4: #bbbbbb;
+    --gray-5: #a3a3a3;
+    --gray-6: #646363;
+    --white: #ffffff;
+    --green: #32cf3f; 
+    --green2: #63ca7f;
+}
+
+.absolute{
+    position: absolute;
+}
+
+*{
+    transform-style: preserve-3d;
+}
+
+body{
+    transform:scale(0.5);
+    display: grid;
+    place-items: center;
+    height:100vh;
+    overflow:hidden;
+    background: var(--blue-2);
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.space{
+    transform: perspective(10000px)
+                translateZ(5vw)
+                rotateX(-15deg);
+
+    width:70vw;
+    height:70vw;;
+}
+
+.container {
+    transform: perspective(10000px)
+                translateZ(5vw)/*
+                rotateX(90deg)
+                rotateZ(45deg)*/;
+
+    width:70vw;
+    height:70vw;
+    background: var(--gray-1);
+}
+
+.eren{
+    width:8vw;
+    height:18.3vw;
+    transform-origin: 0 0 0;
+    background-image: url(/pics/Eren.png);
+    background-size:100%;
+    transform: rotateY(-90deg)
+                rotateZ(90deg)
+               translateZ(-25vw)
+               translateY(-13vw)
+               translateX(28vw);
+}
+
+.total-grass{
+    width:10000vw;
+    height:100000vh;
+    background: var(--green2);
+    transform: translateY(-500vw)
+                translateZ(-0.05vw)
+                translateX(-500vw);
+}
+
+.grass{
+    width:70vw;
+    height:25vw;
+    background-image: url(/pics/grass.jpg);
+    background-size:contain;
+    transform: translateY(45vw);
+}
+
+.pool{
+    width:25vw;
+    height:15vw;
+    background-image: url(/pics/pool.jpg);
+    background-size:cover;
+    transform: translateY(5vw) translateX(40vw);
+}
+
+
+.inside-floor{
+    width:35vw;
+    height:60vw;
+    background-image: url(/pics/woodfloor.jpg);
+    background-size:contain;
+    transform:translateZ(25.05vw)
+                translateY(0vw);
+}
+
+.ff-inside-floor{
+    width:30vw;
+    height:60vw;
+    background-image: url(/pics/woodfloor.jpg);
+    background-size:contain;
+    transform:translateZ(0.1vw)
+                translateY(0vw);
+}
+
+.outside-floor{
+    width:40vw;
+    height:15vw;
+    background-image: url(/pics/way.jpg);
+    background-size:contain;
+    transform:translateY(25vw) translateX(30vw);
+}
+
+.front-wall{
+    width:50vw;
+    height:5vw;
+    transform-origin: 0 0 0;
+    background: var(--white);
+    transform: rotateY(-90deg)
+               translateZ(-35vw);
+}
+
+.front-wall-in{
+    width:50vw;
+    height:5vw;
+    transform-origin: 0 0 0;
+    background: var(--gray-2);
+    transform: rotateY(-90deg)
+    rotateX(90deg)
+               translateZ(-20vw)
+               translateY(-35vw);
+}
+
+.front-wall-2{
+    width:50vw;
+    height:5vw;
+    transform-origin: 0 0 0;
+    background: var(--white);
+    transform: rotateY(-90deg)
+               translateZ(-35vw)
+               translateY(20vw);
+}
+
+.front-wall2-in{
+    width:50vw;
+    height:5vw;
+    transform-origin: 0 0 0;
+    background: var(--gray-2);
+    transform: rotateY(-90deg)
+    rotateX(90deg)
+               translateZ(-5vw)
+               translateY(-35vw);
+}
+
+.front-wall2{
+    width:25vw;
+    height:5vw;
+    transform-origin: 0 0 0;
+    background: var(--white);
+    transform: rotateY(-90deg)
+               translateZ(-35vw)
+               translateY(40vw);
+}
+
+.front-wall2-2{
+    width:25vw;
+    height:5vw;
+    transform-origin: 0 0 0;
+    background: var(--white);
+    transform: rotateY(-90deg)
+               translateZ(-35vw)
+               translateY(55vw);
+}
+
+.front-wall2-2-sl{
+    width:25vw;
+    height:5vw;
+    transform-origin: 0 0 0;
+    background: var(--gray-2);
+    transform: rotateY(-90deg)
+    rotateX(90deg)
+               translateZ(-45vw)
+               translateY(-35vw);
+}
+
+.front-wall2-2-sr{
+    width:25vw;
+    height:5vw;
+    transform-origin: 0 0 0;
+    background: var(--gray-2);
+    transform: rotateY(-90deg)
+    rotateX(90deg)
+               translateZ(-55vw)
+               translateY(-35vw);
+}
+
+.front-wall-top{
+    width:5.1vw;
+    height:60vw;
+    transform-origin: 0 0 0;
+    background: var(--white);
+    transform: rotateY(-90deg)
+               translateZ(-35vw)
+               translateY(0vw)
+               translateX(20vw); 
+}
+
+.front-wall-bottom-right{
+    width:5.1vw;
+    height:25vw;
+    transform-origin: 0 0 0;
+    background: var(--white);
+    transform: rotateY(-90deg)
+               translateZ(-35vw)
+               translateY(0vw)
+               translateX(0vw); 
+}
+
+.front-wall-top-right{
+    width:5.1vw;
+    height:25vw;
+    transform-origin: 0 0 0;
+    background: var(--white);
+    transform: rotateY(-90deg)
+               translateZ(-35vw)
+               translateY(0vw)
+               translateX(45vw); 
+}
+
+.front-wall-bottom-left{
+    width:5.1vw;
+    height:20vw;
+    transform-origin: 0 0 0;
+    background: var(--white);
+    transform: rotateY(-90deg)
+               translateZ(-35vw)
+               translateY(40vw)
+               translateX(0vw); 
+}
+
+.front-wall-top-right-s{
+    width:5.1vw;
+    height:20vw;
+    transform-origin: 0 0 0;
+    background: var(--gray-1);
+    transform:
+               translateZ(5vw)
+               translateY(0vw)
+               translateX(30vw); 
+}
+
+.front-wall-bottom-left-s{
+    width:5.1vw;
+    height:20vw;
+    transform-origin: 0 0 0;
+    background: var(--gray-1);
+    transform:
+               translateZ(5vw)
+               translateY(40vw)
+               translateX(30vw); 
+}
+
+.front-wall-door{
+    width:20vw;
+    height:15vw;
+    transform-origin: 0 0 0;
+    background-image: url(/pics/door.jpg);
+    background-size:cover;
+    background-repeat:inherit;
+    transform: rotateY(-90deg)
+               translateY(25vw)
+               translateZ(-30vw); 
+}
+
+.front-wall-door-s{
+    width:5vw;
+    height:20vw;
+    transform-origin: 0 0 0;
+    background: var(--gray-2);
+    transform: rotateX(90deg)
+               translateZ(-25vw)
+               translateY(0vw)
+               translateX(30vw); 
+}
+
+.front-wall-door-s2{
+    width:5vw;
+    height:20vw;
+    transform-origin: 0 0 0;
+    background: var(--gray-2);
+    transform: rotateX(90deg)
+               translateZ(-40vw)
+               translateY(0vw)
+               translateX(30vw); 
+}
+
+.left-wall{
+    width:35vw;
+    height:25vw;
+    transform-origin: 0 0 0;
+    background: var(--gray-2);
+    transform: rotateX(90deg)
+                translateZ(-60vw);
+}
+
+.mid1-wall{
+    width:25vw;
+    height:25vw;
+    transform-origin: 0 0 0;
+    background-image: url(/pics/Tapiz.jpg);
+    background-size:contain;
+    transform: rotateX(90deg)
+                translateZ(2vw)
+                translateX(5vw);
+}
+
+.mid2-wall{
+    width:25vw;
+    height:25vw;
+    transform-origin: 0 0 0;
+    background-image: url(/pics/Tapiz.jpg);
+    background-size:contain;
+    transform: rotateX(90deg)
+                translateZ(-17vw)
+                translateX(5vw);
+}
+
+.second-Floor{
+    width:35vw;
+    height:60vw;
+    background:var(--gray-1);
+    transform:translateZ(25vw)
+                translateY(-25vw);
+}
+
+.sf-front-wall{
+    width:25vw;
+    height:25vw;
+    transform-origin: 0 0 0;
+    transform: rotateY(-90deg)
+               translateZ(-35vw);
+}
+
+.sf-left-wall{
+    width:20vw;
+    height:25vw;
+    transform-origin: 0 0 0;
+    background: var(--gray-2);
+    transform: rotateX(90deg)
+                translateX(15vw);
+}
+
+.sf-front-column1{
+    width:25vw;
+    height:5vw;
+    transform-origin: 0 0 0;
+    background: var(--white);
+    transform: rotateY(-90deg)
+               translateZ(-15vw)
+               translateY(-25vw);
+}
+
+.sf-front-glass{
+    width:5vw;
+    height:15vw;
+    transform-origin: 0 0 0;
+    background:  rgba(112, 169, 192, 0.431);
+    transform: rotateY(-90deg)
+    rotateX(90deg)
+               translateZ(1vw)
+               translateY(-34vw);
+}
+
+.front-glass-left{
+    width:22vw;
+    height:20vw;
+    transform-origin: 0 0 0;
+    background: rgba(135, 207, 235, 0.431);
+    transform: rotateY(-90deg)
+               translateZ(-33vw)
+               translateY(0vw)
+               translateX(25vw);
+}
+
+.front-glass-left-top{
+    width:17vw;
+    height:20vw;
+    transform-origin: 0 0 0;
+    background: rgba(135, 207, 235, 0.431);
+    transform: rotateY(-90deg)
+               translateZ(-33vw)
+               translateY(0vw)
+               translateX(5vw);
+}
+
+.front-glass-right{
+    width:17vw;
+    height:20vw;
+    transform-origin: 0 0 0;
+    background: rgba(135, 207, 235, 0.431);
+    transform: rotateY(-90deg)
+               translateZ(-33vw)
+               translateY(40vw)
+               translateX(5vw);
+}
+
+
+.sf-left-glass{
+    width:5vw;
+    height:35vw;
+    transform-origin: 0 0 0;
+    background: rgba(135, 207, 235, 0.431);
+    transform: rotateY(-90deg)
+               translateZ(-34vw)
+               translateY(-36vw);
+}
+
+.sf-inside-wall{
+    width:25vw;
+    height:13vw;
+    transform-origin: 0 0 0;
+    background-image: url(/pics/Tapiz.jpg);
+    background-size:contain;
+    transform: rotateY(-90deg)
+    rotateX(90deg)
+               translateZ(27vw)
+               translateY(-13vw);
+}
+
+.sf-inside-wall2{
+    width:25vw;
+    height:30vw;
+    transform-origin: 0 0 0;
+    background-image: url(/pics/Tapiz.jpg);
+    background-size:contain;
+    transform: rotateY(-90deg)
+               translateZ(-5vw)
+               translateY(-30vw);
+}
+
+.sf-front-column1-2{
+    width:25vw;
+    height:5vw;
+    transform-origin: 0 0 0;
+    background: var(--gray-2);
+    transform: rotateY(-90deg)
+    rotateX(90deg)
+               translateZ(25vw)
+               translateY(-15vw);
+}
+
+.sf-front-column2{
+    width:25vw;
+    height:5vw;
+    transform-origin: 0 0 0;
+    background: var(--white);
+    transform: rotateY(-90deg)
+               translateZ(-15vw)
+               translateY(-10vw);
+}
+
+.sf-front-column2-2{
+    width:25vw;
+    height:5vw;
+    transform-origin: 0 0 0;
+    background: var(--gray-2);
+    transform: rotateY(-90deg)
+    rotateX(90deg)
+               translateZ(15vw)
+               translateY(-15vw);
+}
+
+.sf-front-row1{
+    width:5vw;
+    height:15vw;
+    transform-origin: 0 0 0;
+    background: var(--white);
+    transform: rotateY(-90deg)
+               translateZ(-15vw)
+               translateY(-30vw)
+               translateX(20vw);
+}
+
+.sf-left-wall2{
+    width:5vw;
+    height:55vw;
+    transform-origin: 0 0 0;
+    background-image: url(/pics/stone-shad.jpg);
+    background-size:contain;
+    transform: rotateX(90deg)
+                translateX(15vw)
+                translateZ(25vw)
+                translateY(-25vw);
+}
+
+.sf-front-wall-stone{
+    width:15vw;
+    height:55vw;
+    transform-origin: 0 0 0;
+    background-image: url(/pics/stone.jpg);
+    background-size:contain;
+    transform: rotateX(90deg)
+                rotateY(90deg)
+                translateX(-80vw)
+                translateZ(20vw)
+                translateY(-25vw);
+}
+
+.sf-left-wall3{
+    width:5vw;
+    height:55vw;
+    transform-origin: 0 0 0;
+    background-image: url(/pics/stone-shad.jpg);
+    background-size:contain;
+    transform: rotateX(90deg)
+                translateX(15vw)
+                translateZ(120vw)
+                translateY(-25vw);
+}
+
+.sf-left-wall4{
+    width:15vw;
+    height:25vw;
+    transform-origin: 0 0 0;
+    background: var(--gray-2);
+    transform: rotateX(90deg)
+                translateX(0vw)
+                translateZ(180vw)
+                translateY(-0vw);
+}
+
+.third-Floor{
+    width:35vw;
+    height:60vw;
+    background:var(--gray-3);
+    transform:translateZ(50vw)
+                translateY(-85vw);
+}
+
+.third-Floor2{
+    width:35vw;
+    height:60vw;
+    background:var(--gray-3);
+    transform:translateZ(-5vw)
+                translateY(0vw);
+}
+
+.front-wall-fachada{
+    width:5vw;
+    height:35vw;
+    transform-origin: 0 0 0;
+    background: var(--white);
+    transform: rotateY(-90deg)
+               translateZ(-35vw)
+               translateY(-35vw)
+               translateX(-5vw);
+}
+
+.left-wall-fachada{
+    width:5vw;
+    height:35vw;
+    transform-origin: 0 0 0;
+    background: var(--gray-2);
+    transform: rotateY(-90deg)
+               rotateX(-90deg)
+               translateZ(-35vw)
+               translateY(0vw)
+               translateX(-5vw);
+}
+
+.gray-Floor{
+    width:5vw;
+    height:15vw;
+    background-image: url(/pics/stone-shad.jpg);
+    background-size:contain;
+    transform:translateZ(5vw)
+                translateY(-80vw)
+                translateX(15vw);
+}
+
+.sf-front-wall-stone2{
+    width:15vw;
+    height:55vw;
+    transform-origin: 0 0 0;
+    background-image: url(/pics/stone.jpg);
+    background-size:contain;
+    transform: rotateX(90deg)
+                rotateY(90deg)
+                translateX(-95vw)
+                translateZ(15vw)
+                translateY(-50vw);
+}
+
+.back-wall{
+    width:50vw;
+    height:60vw;
+    transform-origin: 0 0 0;
+    background: var(--gray-5);
+    transform: rotateY(90deg)
+            translateZ(0vw)
+            translateY(-145vw)
+            translateX(-50vw);
+}
+
+.sf-right-wall{
+    width:35vw;
+    height:50vw;
+    transform-origin: 0 0 0;
+    background: var(--gray-3);
+    transform: rotateX(90deg)
+                translateZ(145vw);
+}
+
+.street{
+    width:35vw;
+    height:1000vw;
+    transform-origin: 0 0 0;
+    background-image: url(/pics/street.jpg);
+    background-size:contain;
+    transform:translateZ(0vw)
+                translateX(70vw)
+                translateY(-500vw);
+}
+
+
+
+.car .c-bottom{
+    transform-origin: 0 0 0;
+    transform:translateZ(2vw)
+                translateX(80vw);
+    background-image: url(/pics/redmettalic.jpg);
+    background-size:contain;
+}
+
+.car .c-top{
+    transform-origin: 0 0 0;
+    transform:translateZ(7vw)
+                translateX(80vw);
+                background-image: url(/pics/redmettalic.jpg);
+                background-size:contain;
+}
+
+.car .c-left{
+    height:25vw;
+    width:5vw;
+    transform-origin: 0 0 0;
+    transform: rotateY(90deg)
+                translateY(0vw)
+                translateX(-7vw)
+                translateZ(80vw);
+    background-image: url(/pics/redmettalic.jpg);
+    background-size:contain;
+}
+
+.car .c-right{
+    height:25vw;
+    width:5vw;
+    transform-origin: 0 0 0;
+    transform: rotateY(90deg)
+                translateY(0vw)
+                translateX(-7vw)
+                translateZ(95vw);
+    background-image: url(/pics/redmettalicshadow.jpg);
+    background-size:contain;
+}
+
+.car .c-front{
+    width:15vw;
+    height:5vw;
+    transform-origin: 0 0 0;
+    transform: rotateX(90deg)
+                translateY(2vw)
+                translateZ(-25vw)
+                translateX(80vw);
+    background-image: url(/pics/redmettalicshadow.jpg);
+    background-size:contain;
+}
+
+.car .c-back{
+    width:15vw;
+    height:5vw;
+    transform-origin: 0 0 0;
+    transform: rotateX(90deg)
+                translateY(2vw)
+                translateZ(0vw)
+                translateX(80vw);
+    background-image: url(/pics/redmettalicshadow.jpg);
+    background-size:contain;
+}
+
+.c-upper>div{
+    width:15vw;
+    height:25vw;
+}
+
+.c-upper .cu-bottom{
+    transform-origin: 0 0 0;
+    transform:translateZ(7vw)
+                translateX(80vw);
+                background-image: url(/pics/redmettalic.jpg);
+                background-size:contain;
+}
+
+.c-upper .cu-top{
+    height:15vw;
+    transform-origin: 0 0 0;
+    transform:translateZ(12vw)
+                translateX(80vw)
+                translateY(5vw);
+    background-image: url(/pics/redmettalic.jpg);
+    background-size:contain;
+}
+
+.c-upper .cu-left{
+    width:5vw;
+    height:15vw;
+    transform-origin: 0 0 0;
+    transform: rotateY(90deg)
+                translateY(5vw)
+                translateX(-12vw)
+                translateZ(80vw);
+    background-image: url(/pics/redmettalicshadow.jpg);
+    background-size:contain;
+}
+
+.c-upper .cu-right{
+
+    width:5vw;
+    height:15vw;
+    transform-origin: 0 0 0;
+    transform: rotateY(90deg)
+                translateY(5vw)
+                translateX(-12vw)
+                translateZ(95vw);
+    background-image: url(/pics/redmettalicshadow.jpg);
+    background-size:contain;
+}
+
+.c-upper .cu-back{
+    width:15vw;
+    height:5vw;
+    background: var(--blue-3);
+    transform-origin: 0 0 0;
+    transform: rotateX(90deg)
+                translateY(7vw)
+                translateZ(-5vw)
+                translateX(80vw);
+}
+
+.c-upper .cu-front{
+    width:15vw;
+    height:5vw;
+    background: var(--blue-3);
+    transform-origin: 0 0 0;
+    transform: rotateX(90deg)
+                translateY(7vw)
+                translateZ(-20vw)
+                translateX(80vw);
+}
+
+.wheel1{
+    width:5vw;
+    height:5vw;
+    background: black;
+    border-radius: 50px;
+    transform: rotateY(90deg)
+    translateY(4vw)
+    translateZ(77vw)
+    translateX(-3vw);
+}
+
+.wheel2{
+    width:5vw;
+    height:5vw;
+    background: black;
+    border-radius: 50px;
+    transform: rotateY(90deg)
+    translateY(17vw)
+    translateZ(94vw)
+    translateX(-3vw);
+}
+
+.wheel3{
+    width:5vw;
+    height:5vw;
+    background: black;
+    border-radius: 50px;
+    transform: rotateY(90deg)
+    translateZ(77vw)
+    translateY(17vw)
+    translateX(-3vw);
+}
+
+.wheel4{
+    width:5vw;
+    height:5vw;
+    background: black;
+    border-radius: 50px;
+    transform: rotateY(90deg)
+    translateZ(94vw)
+    translateX(-3vw);
+}
+
+.rotate{
+    animation: rotation 8s infinite linear;
+}
+
+.movement{
+    animation:movement 8s infinite linear;
+}
+
+@keyframes rotation{
+    from{
+        transform: rotate3d(0, 0, 0, 0deg)
+                    rotateX(90deg);
+    }
+    to{
+        transform: rotate3d(0, 1, 0,-150deg)
+                    rotateX(90deg);
+    }
+}
+
+@keyframes movement{
+    from{
+        transform: translateY(100vw);
+    }
+    to{
+        transform: translateY(-100vw);
+    }
+}
